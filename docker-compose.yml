@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13.10
+    container_name: weather_postgres
+    env_file: .env
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"  # Пробрасываем порт
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

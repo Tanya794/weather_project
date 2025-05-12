@@ -1,0 +1,7 @@
+pandas==2.0.3          # Обработка данных
+psycopg2-binary==2.9.6 # Подключение к PostgreSQL
+requests==2.31.0       # HTTP-запросы к API (например, OpenWeatherMap)
+python-dotenv==1.0.0   # Загрузка переменных из .env
+
+matplotlib==3.7.1      # Визуализация данных (если нужны графики)
+jupyter==1.0.0         # Для экспериментов в ноутбуках
